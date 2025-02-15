@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--==================== Title ====================-->
+		<title>Register | Page Design</title>
+
+		<!--==================== Meta Description ====================-->
+		<meta
+			name="description"
+			content="This repository contains the layout of a website register page. The design is created using HTML, CSS, and JavaScript."
+		/>
+
+		<!--==================== Meta Robots ====================-->
+		<meta name="robots" content="index, follow" />
+
+		<!--==================== Meta OG (Open Graph) ====================-->
+		<meta property="og:title" content="Register | Page Design" />
+		<meta
+			property="og:description"
+			content="This repository contains the layout of a website register page. The design is created using HTML, CSS, and JavaScript."
+		/>
+
+		<!--==================== Favicon ====================-->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+		<!--==================== Style ====================-->
+		<link rel="stylesheet" href="assets/css/style.css" />
+
+		<!--==================== Remix Icon ====================-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!--==================== No Script (Warning) ====================-->
+		<noscript>
+			<p>This page requires JavaScript to function properly.</p>
+		</noscript>
+
+		<!--==================== REGISTER ====================-->
+		<div id="register">
+			<!--==================== NAVBAR ====================-->
+			<nav id="navbar">
+				<div class="navbar-content container">
+					<a href="#" class="logo">
+						<i class="ri-team-line"></i>
+						<span>Register Now</span>
+					</a>
+				</div>
+			</nav>
+
+			<!--==================== FORM ====================-->
+			<div id="form">
+				<div class="form-content container">
+					<!--==================== FORM TEXT ====================-->
+					<div class="form-text">
+						<h1 id="title">Register page Design</h1>
+						<h2 id="subtitle">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Recusandae molestias exercitationem animi nihil eius facilis.
+						</h2>
+
+						<button type="button" class="text-btn">More information</button>
+					</div>
+
+					<!--==================== FORM AREA ====================-->
+					<div class="form-area">
+						<form action="#">
+							<h2 class="form-title">Start your free trial now!</h2>
+							<h3 class="form-subtitle">
+								Fill out this form to get free access for 30 days
+							</h3>
+
+							<div class="input-field">
+								<label for="name">Your name*</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									placeholder="Enter your name"
+								/>
+
+								<span class="icon">
+									<i class="ri-user-fill"></i>
+								</span>
+							</div>
+
+							<div class="input-field">
+								<label for="email">Your email*</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									placeholder="Enter your best email"
+								/>
+
+								<span class="icon">
+									<i class="ri-mail-fill"></i>
+								</span>
+							</div>
+
+							<div class="input-field">
+								<label for="phone">Your phone</label>
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									placeholder="Enter your phone"
+								/>
+
+								<span class="icon">
+									<i class="ri-phone-fill"></i>
+								</span>
+							</div>
+
+							<div class="input-field">
+								<label for="password">Create password*</label>
+								<input
+									type="password"
+									id="password"
+									name="password"
+									placeholder="Enter your password"
+								/>
+
+								<span class="icon">
+									<i class="ri-lock-password-fill"></i>
+								</span>
+
+								<button:button class="password-visibility">
+									<i class="ri-eye-line"></i>
+									<i class="ri-eye-off-line hidden"></i>
+								</button:button>
+							</div>
+
+							<div class="input-field">
+								<label for="password-confirmation">Confirm password*</label>
+								<input
+									type="password"
+									id="password-confirmation"
+									name="password-confirmation"
+									placeholder="Enter your password again"
+								/>
+
+								<span class="icon">
+									<i class="ri-lock-password-fill"></i>
+								</span>
+
+								<button:button class="password-confirmation-visibility">
+									<i class="ri-eye-line"></i>
+									<i class="ri-eye-off-line hidden"></i>
+								</button:button>
+							</div>
+
+							<button type="submit" class="form-btn">Join free</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--================ Enf of REGISTER =================-->
+
+		<!--==================== Scripts ====================-->
+		<script src="assets/js/index.js"></script>
+	</body>
+</html>
