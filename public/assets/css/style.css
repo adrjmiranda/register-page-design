@@ -47,10 +47,14 @@ body {
 
 body {
 	background-color: var(--white-color-00);
+	overflow-x: hidden;
+	font-size: var(--base-fs);
+	color: var(--black-color-00);
 }
 
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
 input,
@@ -75,9 +79,29 @@ ul {
 	list-style: none;
 }
 
+i {
+	pointer-events: none;
+}
 /***************** Reusable *******************/
 .container {
 	max-width: var(--container-mw);
 	padding-inline: var(--container-pi);
 	margin: 0 auto;
 }
+
+/***************** REGISTER *******************/
+/* TODO: Create REGISTER style */
+/***************** FORM TEXT *******************/
+/* TODO: Create FORM TEXT style */
+/************** End of FORM TEXT ***************/
+
+/***************** FORM AREA *******************/
+/* TODO: Create FORM AREA style */
+/************** End of FORM AREA ***************/
+/************** End of REGISTER ***************/
+
+/***************** IMAGE WAVE *******************/
+/* TODO: Create IMAGE WAVE style */
+/************** End of IMAGE WAVE ***************/
+
+/***************** RESPONSIVENESS *******************/
