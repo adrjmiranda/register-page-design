@@ -62,12 +62,13 @@ body {
 
 body {
 	background-color: var(--white-color-00);
-	overflow-x: hidden;
 	font-size: var(--base-fs);
 	color: var(--white-color-00);
 	background-color: var(--primary-color);
 	font-family: var(--text-ff);
 	position: relative;
+	overflow: hidden;
+	height: 100vh;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -336,3 +337,61 @@ i {
 /************** End of IMAGE WAVE ***************/
 
 /***************** RESPONSIVENESS *******************/
+@media screen and (max-width: 1224px) {
+	/***************** FORM *******************/
+	.form-content {
+		grid-template-columns: 40% 58%;
+		column-gap: 2%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	/***************** FORM *******************/
+	#subtitle {
+		font-size: var(--lg-fs);
+	}
+
+	.form-content {
+		grid-template-columns: 36% 60%;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	/***************** FORM *******************/
+	.form-content {
+		width: 100%;
+		grid-template-columns: 100%;
+	}
+
+	.form-text {
+		display: none;
+	}
+
+	.form-box {
+		max-width: 476px;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	/***************** FORM *******************/
+	.form-title {
+		font-size: var(--lg-fs);
+	}
+
+	.form-subtitle {
+		font-size: var(--base-fs);
+	}
+
+	.input-field label {
+		font-size: var(--sm-fs);
+	}
+}
+
+@media screen and (max-width: 430px) {
+	/***************** FORM *******************/
+	.form-title,
+	.form-subtitle {
+		max-width: 80%;
+		text-align: center;
+	}
+}
