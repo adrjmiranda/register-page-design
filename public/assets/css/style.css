@@ -68,7 +68,7 @@ body {
 	font-family: var(--text-ff);
 	position: relative;
 	overflow: hidden;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -105,6 +105,12 @@ ul {
 
 i {
 	pointer-events: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 /***************** Reusable *******************/
 .container {
@@ -321,13 +327,17 @@ i {
 /***************** IMAGE WAVE *******************/
 #image-wave {
 	position: absolute;
-	bottom: 250px;
 	left: 0;
+	top: 0;
 	z-index: -30;
+	width: 100%;
+	min-height: 100vh;
 }
 
 #image-wave img {
 	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 
 #image-wave img:nth-child(1),
