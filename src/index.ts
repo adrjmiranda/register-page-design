@@ -54,3 +54,24 @@ if (
 		);
 	});
 }
+
+/**
+ * Scroll Reveal Animation
+ */
+import ScrollReveal from 'scrollreveal';
+
+ScrollReveal().reveal('.form-text', {
+	delay: 400,
+	opacity: 0,
+	origin: 'bottom',
+	distance: '100%',
+	duration: 1600,
+	easing: 'ease-in-out',
+});
+
+ScrollReveal().reveal('.form-box', {
+	delay: 450,
+	opacity: 0,
+	duration: 1600,
+	easing: 'ease-in-out',
+});
