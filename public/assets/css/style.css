@@ -115,17 +115,16 @@ i {
 .logo span,
 .logo i {
 	font-size: var(--xl-fs);
+	color: var(--secondary-color);
 }
 
 .logo span {
 	font-weight: var(--bold-fw);
-	color: var(--secondary-color);
 	font-family: var(--main-ff);
 }
 
 .logo i {
 	font-weight: var(--semibold-fw);
-	color: var(--black-color-00);
 }
 
 #title {
@@ -142,6 +141,28 @@ i {
 
 .hidden {
 	display: none;
+}
+
+.btn {
+	background-image: linear-gradient(
+		32deg,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	color: var(--white-color-00);
+	box-shadow: var(--secondary-bs);
+	text-transform: capitalize;
+	font-weight: var(--medium-fw);
+	font-size: var(--base-fs);
+	border-radius: var(--light-radius);
+}
+
+.btn:hover {
+	background-image: linear-gradient(
+		-32deg,
+		var(--primary-color),
+		var(--secondary-color)
+	);
 }
 
 /***************** REGISTER *******************/
@@ -188,28 +209,10 @@ i {
 }
 /***************** FORM TEXT *******************/
 .text-btn {
-	background-image: linear-gradient(
-		32deg,
-		var(--primary-color),
-		var(--secondary-color)
-	);
 	border-radius: 0.33rem;
 	padding-block: 0.75rem;
 	padding-inline: 2.75rem;
-	color: var(--white-color-00);
-	box-shadow: var(--secondary-bs);
-	text-transform: capitalize;
-	font-weight: var(--medium-fw);
-	font-size: var(--base-fs);
 	width: fit-content;
-}
-
-.text-btn:hover {
-	background-image: linear-gradient(
-		-32deg,
-		var(--primary-color),
-		var(--secondary-color)
-	);
 }
 
 /************** End of FORM TEXT ***************/
@@ -271,6 +274,11 @@ i {
 	border-radius: var(--light-radius);
 }
 
+.input-field input:focus {
+	box-shadow: var(--secondary-bs);
+	border-color: var(--secondary-color);
+}
+
 .input-field .icon,
 .input-field .password-visibility,
 .input-field .password-confirmation-visibility {
@@ -299,21 +307,12 @@ i {
 .form-btn {
 	position: absolute;
 	bottom: -50px;
-	border-radius: var(--light-radius);
 	left: 50%;
 	background-color: var(--secondary-color);
 	transform: translate(-50%, -50%);
-	color: var(--white-color-00);
 	height: 50px;
 	width: calc(100% - 5.5rem);
-	font-size: var(--base-fs);
-	font-weight: var(--medium-fw);
 	z-index: 10;
-	background-image: linear-gradient(
-		32deg,
-		var(--primary-color),
-		var(--secondary-color)
-	);
 }
 /************** End of FORM AREA ***************/
 /************** End of REGISTER ***************/
@@ -323,6 +322,7 @@ i {
 	position: absolute;
 	bottom: 250px;
 	left: 0;
+	z-index: -30;
 }
 
 #image-wave img {
