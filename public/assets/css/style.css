@@ -67,6 +67,7 @@ body {
 	color: var(--white-color-00);
 	background-color: var(--primary-color);
 	font-family: var(--text-ff);
+	position: relative;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -145,10 +146,17 @@ i {
 
 /***************** REGISTER *******************/
 /***************** NAVBAR *******************/
+#navbar {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
 .navbar-content {
 	display: flex;
 	align-items: center;
-	padding-block: 0.85rem;
+	height: 80px;
 }
 
 /***************** FORM *******************/
@@ -311,7 +319,20 @@ i {
 /************** End of REGISTER ***************/
 
 /***************** IMAGE WAVE *******************/
-/* TODO: Create IMAGE WAVE style */
+#image-wave {
+	position: absolute;
+	bottom: 250px;
+	left: 0;
+}
+
+#image-wave img {
+	position: absolute;
+}
+
+#image-wave img:nth-child(1),
+#image-wave img:nth-child(2) {
+	opacity: 0.2;
+}
 /************** End of IMAGE WAVE ***************/
 
 /***************** RESPONSIVENESS *******************/
