@@ -67,8 +67,9 @@ body {
 	background-color: var(--primary-color);
 	font-family: var(--text-ff);
 	position: relative;
-	overflow: hidden;
-	min-height: 100vh;
+	overflow-x: hidden;
+	height: auto;
+	position: relative;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -200,7 +201,7 @@ img {
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 2.5rem;
 	align-items: flex-start;
-	height: 100%;
+	height: auto;
 }
 
 .form-text,
@@ -328,7 +329,7 @@ img {
 #image-wave {
 	position: absolute;
 	left: 0;
-	top: 0;
+	bottom: 0;
 	z-index: -30;
 	width: 100%;
 	min-height: 100vh;
@@ -347,6 +348,13 @@ img {
 /************** End of IMAGE WAVE ***************/
 
 /***************** RESPONSIVENESS *******************/
+@media screen and (max-height: 800px) {
+	.form-content {
+		padding-top: 5.75rem;
+		padding-bottom: 10.75rem;
+	}
+}
+
 @media screen and (max-width: 1224px) {
 	/***************** FORM *******************/
 	.form-content {
